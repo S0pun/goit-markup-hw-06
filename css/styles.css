@@ -220,7 +220,7 @@ img {
 .mobile-menu-contacts-link:hover,
 .mobile-menu-contacts-link:focus,
 .mobile-menu-nav-link.current {
-  color: #404bbf;
+  color: #4d5ae5;
 }
 
 .mobile-menu-links {
@@ -253,6 +253,7 @@ img {
 .hero {
   background-color: #2e2f42;
   padding: 36px 0;
+  max-width: 320px;
   margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -329,7 +330,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-  padding: 0 16px;
 }
 
 .features-item {
@@ -353,6 +353,7 @@ img {
 }
 
 .features-item-text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -374,11 +375,14 @@ img {
   margin-bottom: 72px;
 }
 
+.wrapper {
+  padding: 0 28px;
+}
+
 .our_team-list {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-  padding: 0 28px;
 }
 
 .our_team-item {
@@ -534,7 +538,7 @@ img {
 
 .footer {
   background: #2e2f42;
-  padding: 96px 16px;
+  padding: 96px;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
@@ -939,6 +943,10 @@ input::placeholder {
     max-width: 768px;
   }
 
+  .header-container {
+    align-items: center;
+  }
+
   .mobile-menu {
     display: none;
   }
@@ -954,7 +962,11 @@ input::placeholder {
   }
 
   .nav-link {
+    font-weight: 500;
+    font-size: 16px;
     color: #2e2f42;
+    line-height: 1.50;
+    letter-spacing: 0.02em;
     display: block;
     padding: 24px 0;
     position: relative;
@@ -1002,7 +1014,7 @@ input::placeholder {
   }
 
   .contacts {
-    margin: auto 121px;
+
   }
 
   .contacts-list {
@@ -1018,6 +1030,7 @@ input::placeholder {
   .hero {
     background-color: #2e2f42;
     padding: 112px 0;
+    max-width: 768px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1046,11 +1059,10 @@ input::placeholder {
   .features-list {
     gap: 24px;
     row-gap: 72px;
-    padding: 0 16px;
   }
 
   .features-item {
-    width: calc((100% - 24px * 2) / 2);
+    width: calc((100% - 24px) / 2);
   }
 
   .features-item-title {
@@ -1070,7 +1082,7 @@ input::placeholder {
   }
 
   .our_team-item {
-    width: calc((100% - 24px * 2) / 2);
+    width: calc((100% - 24px) / 2);
   }
 
   .our_portfolio-list {
@@ -1080,7 +1092,7 @@ input::placeholder {
   }
 
   .our_portfolio-item {
-    width: calc((100% - 24px * 2) / 2);
+    width: calc((100% - 24px)/ 2);
   }
 
   .fotter {
@@ -1093,6 +1105,12 @@ input::placeholder {
     padding: 96px 0;
     padding-left: 108px;
   }
+
+.footer-form {
+  gap: 24px;
+  padding: 0 15px;
+  flex-wrap: nowrap;
+}
 
   .footer-link {
   }
@@ -1120,19 +1138,19 @@ input::placeholder {
   .subscribe-subtitle {
     text-align: left;
   }
-}
 
 .modal {
   padding: 72px 24px 24px;
   width: 408px;
   min-height: 584px;
 }
+}
 
 /*----------------PC----------------*/
 
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1440px;
+    max-width: 1158px;
   }
 
   .header-container {
@@ -1204,6 +1222,10 @@ input::placeholder {
     width: calc((100% - 24px * 2) / 4);
   }
 
+  .features-item-text {
+    font-weight: 400;
+  }
+
   .features-item-icon {
     display: block;
   }
@@ -1236,7 +1258,7 @@ input::placeholder {
   }
 
   .our_team-item {
-    width: calc((1104px - 24px * 2) / 4);
+    width: calc((1104px - 24px) / 4);
   }
 
   .section-our_portfolio {
@@ -1249,7 +1271,7 @@ input::placeholder {
   }
 
   .our_portfolio-item {
-    width: calc((100% - 24px * 2) / 3);
+    width: calc((100% - 24px) / 3);
   }
 
   .our_portfolio-item:hover {
