@@ -382,7 +382,8 @@ img {
 .our_team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 72px;
+  row-gap: 72px;
+  justify-content: center;
 }
 
 .our_team-item {
@@ -965,7 +966,7 @@ input::placeholder {
     font-weight: 500;
     font-size: 16px;
     color: #2e2f42;
-    line-height: 1.50;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     display: block;
     padding: 24px 0;
@@ -1014,7 +1015,6 @@ input::placeholder {
   }
 
   .contacts {
-
   }
 
   .contacts-list {
@@ -1075,24 +1075,28 @@ input::placeholder {
     text-align: left;
   }
 
+  .wrapper {
+    padding: 0 28px;
+    align-items: center;
+    justify-content: center;
+  }
+
   .our_team-list {
     gap: 24px;
     row-gap: 64px;
-    padding: 0px 108px;
   }
 
   .our_team-item {
-    width: calc((100% - 24px) / 2);
+    /*width: calc((100% - 24px)/ 2);*/
   }
 
   .our_portfolio-list {
     gap: 24px;
     row-gap: 72px;
-    padding: 0 16px;
   }
 
   .our_portfolio-item {
-    width: calc((100% - 24px)/ 2);
+    width: calc((100% - 24px) / 2);
   }
 
   .fotter {
@@ -1106,11 +1110,11 @@ input::placeholder {
     padding-left: 108px;
   }
 
-.footer-form {
-  gap: 24px;
-  padding: 0 15px;
-  flex-wrap: nowrap;
-}
+  .footer-form {
+    gap: 24px;
+    padding: 0 15px;
+    flex-wrap: nowrap;
+  }
 
   .footer-link {
   }
@@ -1139,11 +1143,11 @@ input::placeholder {
     text-align: left;
   }
 
-.modal {
-  padding: 72px 24px 24px;
-  width: 408px;
-  min-height: 584px;
-}
+  .modal {
+    padding: 72px 24px 24px;
+    width: 408px;
+    min-height: 584px;
+  }
 }
 
 /*----------------PC----------------*/
@@ -1219,7 +1223,7 @@ input::placeholder {
   }
 
   .features-item {
-    width: calc((100% - 24px * 2) / 4);
+    /*width: calc((100% - 24px * 2) / 4);*/
   }
 
   .features-item-text {
@@ -1258,7 +1262,7 @@ input::placeholder {
   }
 
   .our_team-item {
-    width: calc((1104px - 24px) / 4);
+    width: calc((100% - 24px * 2) / 4);
   }
 
   .section-our_portfolio {
@@ -1271,7 +1275,7 @@ input::placeholder {
   }
 
   .our_portfolio-item {
-    width: calc((100% - 24px) / 3);
+    width: calc((100% - 24px * 2) / 3);
   }
 
   .our_portfolio-item:hover {
